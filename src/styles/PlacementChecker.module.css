@@ -1,0 +1,177 @@
+.placementChecker {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 40px;
+}
+
+.title {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.formGroup {
+  margin-bottom: 25px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+  font-size: 17px;
+}
+
+.formGroup select,
+.formGroup input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.formGroup select:focus,
+.formGroup input[type="number"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.checkboxGroup label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0; 
+  font-weight: normal; 
+  color: #333;
+}
+
+.checkboxGroup input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2); }
+
+.submitButton {
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 30px;
+  font-size: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.resultContainer {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  opacity: 0; 
+  transition: opacity 0.5s ease-in-out;
+}
+
+.highChance {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #28a745;
+}
+
+.goodChance {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffc107;
+}
+
+.needsImprovement {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #dc3545;
+}
+
+
+.dark-mode .placementChecker {
+  background-color: #3a3f4a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .title {
+  color: #61dafb;
+}
+
+.dark-mode .formGroup label {
+  color: #e0e0e0;
+}
+
+.dark-mode .formGroup select,
+.dark-mode .formGroup input[type="number"] {
+  background-color: #555;
+  color: #e0e0e0;
+  border-color: #777;
+}
+
+.dark-mode .formGroup select:focus,
+.dark-mode .formGroup input[type="number"]:focus {
+  border-color: #61dafb;
+  box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.25);
+}
+
+.dark-mode .checkboxGroup label {
+  color: #e0e0e0;
+}
+
+.dark-mode .submitButton {
+  background-color: #61dafb;
+  color: #282c36;
+}
+
+.dark-mode .submitButton:hover {
+  background-color: #21a1f1;
+}
+
+.dark-mode .highChance {
+  background-color: #4CAF50; 
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.dark-mode .goodChance {
+  background-color: #FFC107; 
+  color: #333;   border: 1px solid #FFC107;
+}
+
+.dark-mode .needsImprovement {
+  background-color: #DC3545; 
+  color: white;
+  border: 1px solid #DC3545;
+}
+
+@media (max-width: 600px) {
+  .placementChecker {
+    padding: 20px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .resultContainer {
+    font-size: 18px;
+  }
+}

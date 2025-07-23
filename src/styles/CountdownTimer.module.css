@@ -1,0 +1,61 @@
+.countdownTimer {
+  margin-top: 40px;
+  background-color: #f0f8ff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.title {
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.timerDisplay {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1.5px;
+}
+
+.timerDisplay span {
+  display: inline-block;
+  margin: 0 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.dark-mode .countdownTimer {
+  background-color: #2f343e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .title {
+  color: #61dafb;
+}
+
+.dark-mode .timerDisplay {
+  color: #e0e0e0;
+}
+
+.dark-mode .timerDisplay span {
+  background-color: #61dafb;
+  color: #282c36;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  .timerDisplay {
+    font-size: 1.8em;
+  }
+  .timerDisplay span {
+    margin: 5px;
+    padding: 8px 12px;
+  }
+}
